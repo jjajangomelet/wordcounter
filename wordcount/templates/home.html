@@ -1,10 +1,33 @@
-<h1>About</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<p>안녕하세요, 여기서 글자를 세세요!11</p>
-<a href="{%url 'about'%}">ABOUT</a>
-<br>
-<form action="{%url 'result'%}">
-    <textarea cols="40" rows="10" name="fulltext"></textarea>
-    <br>
-    <input type="submit" value="Count!">
-</form>
+        <script
+        src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class = 'container'>
+            <p class="bg-primary">안녕하세요, 여기서 글자를 세세요!11</p>
+            <a href="{%url 'about'%}">ABOUT</a>
+            <br>
+            <form action="{%url 'result'%}">
+                <textarea cols="40" rows="10" name="fulltext" background="red"></textarea>
+                <br>
+                <input type="submit" class="btn btn-danger">
+            </form>
+
+    </div>
+
+</body>
